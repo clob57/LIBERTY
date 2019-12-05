@@ -1,0 +1,428 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+#megaConteneur{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: 'poiret_oneregular';
+
+}
+@font-face {
+    font-family: 'poiret_oneregular';
+    src: url('../fonts/poiretone-regular-webfont.woff2') format('woff2'),
+         url('../fonts/poiretone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helvetica-neue';
+    src: url('../fonts/HelveticaNeue.ttf')
+    
+}
+@font-face {
+    font-family: 'helvetica-neue-light';
+    src: url('../fonts/HelveticaNeueLight.ttf')
+    
+}
+
+/*-------------------------------MENU------------------------------*/
+#bandeau{
+  width: 100%;
+  height: 10vh;
+  background-color: #E74C3C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#menu{
+  width: 95%;
+  font-family: 'helvetica-neue';
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.liberty{
+  width: 146px;
+	font-size: 60px;
+  font-family: 'helvetica-neue-light';
+	color: white;
+}
+.navigation{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 600px;
+}
+.navigation li{
+	display: flex;
+	list-style-type: none;
+}
+.navigation li a{
+	text-decoration: none;
+	color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+.navigation a:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+/*------------------------------IMAGE FOND------------------------------*/
+.image{
+  width: 100%;
+  height: 100vh;
+  top: 10vh;
+  background: url('../img/hero.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#logo{
+  width: 100%;
+  height: 234px;
+  text-align: center;
+  margin-bottom: 450px;
+}
+#logo h1{
+  font-size: 60px;
+  font-weight: normal;
+  line-height: 80px;
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+}
+.CONTACT{
+  height: 50px;
+  width: 400px;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #E74C3C;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+.CONTACT a{
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
+.CONTACT a:hover{
+  background: #E74C3C;
+  opacity: 0.7;
+}
+/*------------------------------OUR WORKS------------------------------*/
+#WORKS{
+  width: 100%;
+  height: 75vh;
+  position: absolute;
+  top: 120vh;
+}
+.text h2{
+  color: #5d6b78;
+}
+.text{
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: normal;
+  text-align: center;
+  font-size: 40px;
+}
+.text p{
+  font-size: 20px;
+  font-weight: bold;
+  color: #b2b2b2;
+  font-family: 'helvetica-neue-light';
+  font-stretch: ultra-expanded;
+  line-height: 1.5;
+}
+.images{
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  
+}
+.images img{
+  margin: 30px;
+  width:20%;
+}
+.images :hover{
+  opacity: 0.7;
+  transform: scale(1.1);
+  transition: transform .8s ease-in-out;
+  cursor: pointer;
+
+}
+/*------------------------------PRICING TABLE------------------------------*/
+#PRICING{
+	width: 100%;
+	height: 65vh;
+  position: absolute;
+  top: 220vh;
+}
+#blocPricing{
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  text-align: center;
+}
+.prix:hover .metaux{
+  background: #3498DB;
+  color: white;
+  cursor: pointer;
+}
+.prix:hover .liste a{
+  background: #3498DB;
+  color: white;
+}
+.metaux{
+	width: 318px;
+	height: 129px;
+	background-color: #f5f5f5;
+	text-align: center;
+}
+.metaux h3{
+	font-size: 40px;
+	font-weight: lighter;
+}
+.metaux p{
+	font-weight: bold;
+}
+.prix{
+	width: 320px;
+	height: 550px;
+	border: solid 1px lightgrey;
+	margin: 30px;
+	font-size: 20px;
+  border-radius: 3px;
+	text-align: center;
+  font-family: 'helvetica-neue';
+}
+.prix:hover{
+  border-color: #3498DB;
+  transform: scale(1.1);
+  transition: transform .8s ease-in-out;
+}
+.liste{
+	width: 260px;
+	height: 292px;
+	margin-top: 0;
+	margin-left: 27px;
+}
+.liste li{
+	border-bottom: solid 0.5px lightgrey;
+	color: black;
+	text-align: center;
+	list-style-type: none;
+  line-height: 2.6;
+}
+.liste a{
+	display:block;
+  margin: auto;
+  width: 216px;
+  height: 50px;
+  padding: 15px 0;
+  bottom: 15px;
+  font-size: 18px;
+  color: #798590;
+  background: #2C3E50;
+ 	text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 25px;
+  -webkit-border-radius: 4px;
+}
+.liste a:hover{
+	background: #3498DB;
+  color: white;
+  border-radius: 3px;
+	box-shadow: 3px 3px 0px 0px silver;
+}
+/*------------------------------CONTACT------------------------------*/
+#conteneur-contact{
+  width: 100%;  
+  height: 60vh;
+  background-color: #2C3E50;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 320vh;
+}
+.textContact {
+  margin-top: 20px;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 40px;
+  text-align: center;
+}
+.textContact h2{
+  color: white;
+}
+.textContact p{
+  font-size: 20px;
+  font-weight: bold;
+  color: #b2b2b2;
+  font-family: 'helvetica-neue-light';
+  font-stretch: ultra-expanded;
+  line-height: 1.5;
+}
+#BoxContact{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 80px;
+  padding-right: 120px;
+  align-items: stretch;
+}
+.message{
+  width: 30%;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 5px;
+  z-index: 1;
+}
+#NOM{
+  width: 25%;
+  position: relative;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+#blocService{
+  display: flex;
+  justify-content: space-between;
+  width: 120%;
+  height: 30%;
+  align-items: flex-end;
+  border-radius: 5px;
+}
+#Service{
+  width: 78%;
+  height: 100%;
+  border: solid transparent 1px;
+  border-radius: 5px;
+}
+.input100 {
+  width: 120%;
+  font-family: 'helvetica-neue-light';
+  font-weight: normal;
+  background-color: white;
+  color: grey;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.service{
+  color: grey;
+  font-size: 18px;
+}
+input.input100 {
+  height: 62px;
+  padding: 0 35px 0 10px;
+}
+textarea.input100 {
+  min-height: 214px;
+  padding: 19px 35px 0 10px;
+}
+.Send{
+  height: 100%;
+  width: 20%;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #E74C3C;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 5px;
+}
+.Send a{
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
+.Send a:hover{
+  background: #E74C3C;
+  opacity: 0.7;
+  cursor: pointer;
+}
+/*------------------------------FOOTER------------------------------*/
+footer{
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  top: 378vh;
+  text-align: center;
+}
+footer p{
+  margin-top: 120px;
+  font-size: 20px;
+}
+.reseaux{
+  font-size: 70px;
+}
+.reseaux a:nth-last-child(-n+3){
+  font-size: 40px;
+}
+
+.reseaux a:hover{
+  list-style-type: none;
+  text-decoration: none;
+  color: silver;
+  text-shadow: 1px 1px 1px grey;
+  cursor: pointer;
+}
+#scroll_to_top { 
+  position: fixed; 
+  width: 25px; 
+  height: 25px; 
+  bottom: 50px; 
+  right: 30px; 
+} 
+#scroll_to_top img { 
+  width: 50px; 
+  height: 50px;
+}
+.chevron{
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50px 50px;
+  margin-left: 48%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+.chevron p{
+  margin-top: 50px;
+}
+.chevron i{
+  font-size: 80px;
+  cursor: pointer;
+}
